@@ -1,3 +1,9 @@
 # Supporting-MMRIA---MD
-Hello World - Tutorial 
-Montgomery in-county hospitals have been loaded into rStudio. #Create a MAP  
+# Import Health and Human Services Facilities 
+Maternity Partnership - Prenatal Care Program
+Pregnancy Testing
+
+```{r}
+library(readr)
+HHSFMC <- read_csv("Health_and_Human_Services_Facilities_List.csv")
+View(HHSFMC)
