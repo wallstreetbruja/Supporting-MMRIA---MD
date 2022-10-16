@@ -20,10 +20,4 @@ MMRIAData <- read_csv("data-table.csv")
 View(MMRIAData)
 ```
 
-# Import Montgomery County Hospital Maps, wrangle data, then create a map. 
 
-```{r}
-library(readr)
-DataMCHospitals<- read_csv("Hospitals_Map.csv")
-View(DataMCHospitals)
-```
