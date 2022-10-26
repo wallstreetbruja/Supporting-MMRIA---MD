@@ -19,3 +19,17 @@ Nurse Case Management: Maternal and Child
 library(readr)
 HHSFMC <- read_csv("Health_and_Human_Services_Facilities_List.csv")
 View(HHSFMC)
+
+## Filtering the Health and Human Services Facilities
+
+```{r}
+library(dplyr)
+```
+
+```{r}
+HHSFMC1 <- HHSFMC %>%
+  select(`Building Name`, `Program Name`, Zip) %>%
+  filter(`Program Name` %in% c("Maternity Partnership - Prenatal Care Program", "Pregnancy Testing", "Fetal & Infant Mortality Review Board (FIMR or Improved Pregnancy Outcomes)", "Nurse Case Management: Maternal and Child", "Medical Care for Unisured Kids (Care for Kids)", "Maryland Children's Health Insurance Program (eligibility determination)"))
+
+View(HHSFMC1)
+```
