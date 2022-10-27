@@ -22,6 +22,7 @@ View(HHSFMC)
 
 ## Filtering the Health and Human Services Facilities
 
+
 ```{r}
 library(dplyr)
 ```
@@ -29,7 +30,7 @@ library(dplyr)
 ```{r}
 HHSFMC1 <- HHSFMC %>%
   select(`Building Name`, `Program Name`, Zip) %>%
-  filter(`Program Name` %in% c("Maternity Partnership - Prenatal Care Program", "Pregnancy Testing", "Fetal & Infant Mortality Review Board (FIMR or Improved Pregnancy Outcomes)", "Nurse Case Management: Maternal and Child", "Medical Care for Unisured Kids (Care for Kids)", "Maryland Children's Health Insurance Program (eligibility determination)"))
+  filter(`Program Name` %in% c("Maternity Partnership - Prenatal Care Program", "Pregnancy Testing", "Fetal & Infant Mortality Review Board (FIMR or Improved Pregnancy Outcomes)", "Nurse Case Management: Maternal and Child", "Medical Care for Unisured Kids (Care for Kids)", "Maryland Children's Health Insurance Program (eligibility determination)", "Child Abuse and Neglect Hotline", "ChildLink", "Childhood Lead Posioning", "Child Welfare Services Program", "Child Welfare Services Program", "Healthy Montgomery (community health improvement planning and statistics)"))
 
 View(HHSFMC1)
 ```
